@@ -11,9 +11,9 @@ public class ArrayPractice {
         int[] integerArray = {1, 1, 2, 3, 5, 8};
 
         //loop through array print out values
-//        for (int value: integerArray) {
-////            System.out.println(value);
-//    }
+         for (int value : integerArray) {
+          System.out.println(value);
+   }
         //only print odd numbers
         for (int j : integerArray) {
             if (j % 2 != 0) {
