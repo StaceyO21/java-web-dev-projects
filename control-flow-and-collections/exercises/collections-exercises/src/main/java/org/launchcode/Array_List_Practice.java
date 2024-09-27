@@ -1,7 +1,7 @@
 package org.launchcode;
 
 import java.util.ArrayList;
-
+import java.util.Arrays;
 
 
 public class Array_List_Practice {
@@ -14,13 +14,11 @@ public class Array_List_Practice {
         System.out.println(sumEven(arr));
 
         ArrayList <String> str = new ArrayList<>();
-        str.add("apple");
-        str.add("banana");
-        str.add("pears");
-        str.add("oranges");
-        str.add("grapes");
+        String[] word = {"apple", "banana", "pears", "oranges"};
 
-        System.out.println(fiveLetters(str));
+        ArrayList <String> stringArrayList = new ArrayList<>(Arrays.asList(word));
+
+         fiveLetters(stringArrayList);
     }
 
     public static int sumEven(ArrayList<Integer> arr) {
@@ -33,14 +31,12 @@ public class Array_List_Practice {
         return total;
     }
 
-    public static <str> void fiveLetters(ArrayList<String> str) {
+    public static void fiveLetters(ArrayList<String> stringArray) {
 
-        for (int i = 0; i < 5; i++) {
-            String word = str[i];
-            if (str[i].size() == 5) {
-                System.out.println(i);
-            }
-
-        }
+     for (String string : stringArray) {
+         if (string.length() == 5) {
+             System.out.println(string);
+         }
+     }
     }
 }
