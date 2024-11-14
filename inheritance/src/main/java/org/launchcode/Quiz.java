@@ -8,7 +8,7 @@ public class Quiz {
     private int total;
 
     public Quiz(ArrayList<Question> questions) {
-        Questions = questions;
+        this.questions = questions;
         this.score = 0;
         this.total = 0;
         for (int i = 0; i < questions.size(); i++) {
